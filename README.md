@@ -42,10 +42,25 @@ Visibility (from Chievres weather station), in km
 Tdewpoint (from Chievres weather station), Â°C
 rv1, Random variable 1, nondimensional
 rv2, Random variable 2, nondimensional
+Where indicated, hourly data (then interpolated) from the nearest airport weather station (Chievres Airport, Belgium) was downloaded from a public data set from Reliable Prognosis, rp5.ru. Permission was obtained from Reliable Prognosis for the distribution of the 4.5 months of weather data.
 ......
 This repository for Appliance Energy Prediction
 
 ## Environment Setup
+if your 'conda' base environment is old,it is important that you install the 'setuptools and 'wheel'packages that are dependencies for 'autogluon'
+...
+pip install -U setuptools wheel
+...
+Step 1: Create Environment
+....
+conda create --name /environment name) python=3.9 -y
+....
+Step 2: Activate Environment
+
+Step 3: Install required packages
+....bash
+pip install torch==1.13.1+cpu torchvision==0.14.1+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+pip install autogluon streamlit jupyter
 
 ## Code Structure
 
